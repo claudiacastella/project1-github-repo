@@ -31,24 +31,58 @@
         </div>
     </header>
     <main>
-        <section id="info">
+        <section id="info" class="flex">
             <div id="info-text">
                 <h1>Empower Your Business With Stunning Design!</h1>
                 <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-                <div id="info-btn">
+                <div id="info-btn" class="flex">
                     <a href="contact.html" class="btn-blue">Get in touch</a>
                     <a href="projects.html" class="link-grey">See our work</a>
                 </div>
             </div>
             <div id="info-img">
-                <img src="project-assets/hero-section/hero-image.png" alt="Hero image">
+                <img src="project-assets/hero-section/hero-image.png" id="hero-img" alt="Hero image">
                 <img src="project-assets/hero-section/card-1.png" alt="Card 1" class="hidden card-1">
-                <img src="project-assets/hero-section/card-2.png" alt="Card 2" class="hidden">
+                <img src="project-assets/hero-section/card-2.png" alt="Card 2" class="hidden card-2">
             </div>
         </section>
-        <section id="clients"></section>
-        <section id="projects"></section>
-        <section id="testimonials"></section>
+        <section id="clients" class="flex">
+            <img src="project-assets/logos/airbnb-logo.svg" alt="airbnb logo">
+            <img src="project-assets/logos/google-logo.svg" alt="google logo">
+            <img src="project-assets/logos/microsoft-logo.svg" alt="microsoft logo">
+            <img src="project-assets/logos/fedex-logo.svg" alt="fedex logo">
+            <img src="project-assets/logos/amazon-logo.svg" alt="amazon logo" class="hidden">
+        </section>
+        <section id="projects">
+            <h3>Recent Projects</h3>
+            <div id="articles">
+                <article class="projects">
+                    <img id="article-img" src="" alt="" class="project-img">
+                    <p id="article-title" class="p-big"></p>
+                    <p id="article-summary"></p>
+                    <a id="learn-more" href="" class="more-info"></a>
+                </article>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div id="test-text" class="flex column">
+                <h3>Hear What Our Clients Have to Say</h3>
+                <h4>"Circle helped us through every stage of our startup. We really enjoyed working with you."</h4>
+                <div class="client flex row">
+                    <div class="client-img">
+                        <img src="project-assets/testimonial-section/profile.png" alt="">
+                    </div>
+                    <div class="client-info flex column">
+                        <div class="client-name">Kristin Watson</div>
+                        <div class="client-company">Booking.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="emoji top-left"></div>
+            <div class="emoji top-right"></div>
+            <div class="emoji bottom-left"></div>
+            <div class="emoji bottom-right"></div>
+        </section>
         <section id="services"></section>        
     </main>
     <footer>
