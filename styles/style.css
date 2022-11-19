@@ -298,6 +298,60 @@ section {
   background-image: url(/project-assets/testimonial-section/memoji-4.png);
 }
 
+#serv-content {
+  flex-direction: column;
+}
+
+.serv-card {
+  background-color: white;
+  margin-bottom: 16px;
+  padding: 10%;
+}
+.serv-icon {
+  background-color: #ECF7FF;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.serv-icon img {
+  margin: 20px;
+}
+
+/* Footer section starts here */
+
+#contact {
+  margin: 0;
+  background-color: #FFC600;
+  padding: 10%;
+}
+.input-email {
+  background-color:#ecf7ff;
+  padding: 5%;
+  width: 50%;
+  margin: 0 auto;
+}
+#form-email {
+  flex-direction: column;
+}
+#email {
+  padding-left: 5%;
+  border: none;
+  color: #292e47;
+  background-color:#ecf7ff;
+}
+.email-icon {
+  width:30px;
+  height: 30px;
+}
+
+.subscribe {
+  margin: 20px auto;
+  padding: 15px 30px;
+  border: none;
+  width: 60%;
+}
+
+
 /* Responsive */
 
 @media only screen and (min-width: 768px) {
@@ -381,5 +435,19 @@ section {
   .emoji {
     display: block;
   }
+  #serv-content {
+    flex-direction: row;
+  }
+  .serv-card {
+    margin-right: 40px;
+    padding: 5%;
+  }
 
+  #contact {
+    text-align: center;
+    justify-content: center;
+  }
+  #form-email {
+    flex-direction: row;
+  }
 }
