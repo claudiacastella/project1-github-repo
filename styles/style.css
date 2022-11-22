@@ -133,6 +133,7 @@ h5 {
   background-color: #072AC8;
   color: white;
   padding: 2%;
+  border: none;
 }
 .head .icon {
   color: #072AC8;
@@ -326,6 +327,11 @@ section {
   padding: 10%;
   text-align: center;
 }
+
+.contact-hidden {
+  display: none;
+}
+
 #contact h3{
   color: #292E47;
 }
@@ -383,6 +389,24 @@ section {
 .links-div-line a{
   width: 33%;
   text-align: left;
+}
+
+/* CSS Contact starts here */
+
+#contact-form label {
+  color:#6B708D;
+}
+fieldset {
+  border: none;
+}
+
+#contact-form input, textarea{
+  background-color: rgba(107, 112, 141, 0.1);
+  color: #6B708D;
+  border: none;
+  padding: 22px 20px;
+  width: 100%;
+  margin: 10px 0 20px;
 }
 
 
@@ -517,5 +541,4 @@ section {
     margin: 0;
     width: 50%;
   }
-  
 }

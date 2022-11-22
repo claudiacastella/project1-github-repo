@@ -5,10 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Projects</title>
 </head>
 <body>
-    
+    <header>
+        <div class="head flex row">
+            <img
+            src="project-assets/logos/circle.svg"
+            alt="Circle Logo"
+            class="main-logo"
+            />
+            <nav id="nav-bar" class="nav-bar-large flex">
+                <ul class="top-menu flex row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-blue btn nav-btn-large">Contact us</a>
+            <!-- to add the javascript function for the burguer menu add this // href="javascript:void(0);" onclick="myFunction()" // to this link-->
+            <a class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <main></main>
+    <footer>
+        <section id="contact">
+          <h3>Do you have any questions?</h3>
+          <p>Let us help you</p>
+          <div id="form">
+              <form method="get" id="form-email" class="flex">
+                  <div class="flex input-email">
+                      <div>
+                          <img src="/project-assets/newsletter/icon/mail.svg" alt="Email icon" class="email-icon">
+                      </div>
+                      <input type="email" name="email" id="email" placeholder="Enter your email">
+                  </div>
+                  <input type="submit" value="Subscribe" class="btn-blue subscribe">
+              </form>
+          </div>
+        </section>
+        <section id="links" class="flex">
+          <div class="company">
+              <div>
+                  <img src="/project-assets/logos/circle.svg" alt="Circle logo" class="footer-logo">
+              </div>
+              <p class="footer-text">2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+          </div>
+          <div class="links-div flex">
+              <div class="links-div-line flex">
+                  <a href="#" class="footer-link">Team</a>
+                  <a href="#" class="footer-link">Services</a>
+                  <a href="#" class="footer-link">About Us</a>
+              </div>
+              <div class="links-div-line flex">
+                  <a href="#" class="footer-link">Press</a>
+                  <a href="#" class="footer-link">Projects</a>
+                  <a href="#" class="footer-link">Privacy Policy</a>
+              </div>
+          </div>
+        </section>
+      </footer>
+
 <script src="index.js"></script>
 </body>
 </html>
