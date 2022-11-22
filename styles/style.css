@@ -197,6 +197,7 @@ section {
   background-image: url(/project-assets/testimonial-section/orbit.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   margin: 5% 0%;
   height: 450px;
@@ -324,14 +325,17 @@ section {
   background-color: #FFC600;
   padding: 10%;
 }
+#form {
+  margin: 10% 0 0;
+}
+#form-email {
+  flex-direction: column;
+}
 .input-email {
   background-color:#ecf7ff;
   padding: 5%;
   width: 50%;
   margin: 0 auto;
-}
-#form-email {
-  flex-direction: column;
 }
 #email {
   padding-left: 5%;
@@ -446,8 +450,26 @@ section {
   #contact {
     text-align: center;
     justify-content: center;
+    padding: 5%;
+  }
+  #form {
+    margin: 50px 0;
   }
   #form-email {
     flex-direction: row;
+    justify-content: center;
+  }
+  .input-email {
+    height: 80px;
+    width: 393px;
+    margin: 0 20px;
+    padding: 0 20px;
+    align-items: center
+  }
+  .subscribe {
+    margin: 0px;
+    padding: 15px 30px;
+    width: 198px;
+    height: 80px
   }
 }
