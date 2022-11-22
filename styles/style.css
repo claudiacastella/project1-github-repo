@@ -200,7 +200,7 @@ section {
   background-position: center;
   position: relative;
   margin: 5% 0%;
-  height: 450px;
+  min-height: 450px;
   padding: 5%;
 }
 
@@ -324,6 +324,10 @@ section {
   margin: 0;
   background-color: #FFC600;
   padding: 10%;
+  text-align: center;
+}
+#contact h3{
+  color: #292E47;
 }
 #form {
   margin: 10% 0 0;
@@ -353,6 +357,32 @@ section {
   padding: 15px 30px;
   border: none;
   width: 60%;
+}
+
+#links {
+  flex-direction: column;
+  text-align: center;
+}
+.footer-logo {
+  width: 100px;
+  height: 30px;
+  margin: 30px auto;
+}
+.footer-text {
+  color:#6b708d;
+}
+.links-div {
+  flex-direction: column;
+  margin: 5%;
+}
+
+.links-div-line {
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+.links-div-line a{
+  width: 33%;
+  text-align: left;
 }
 
 
@@ -393,7 +423,10 @@ section {
   #info-text {
     width: 50%;
     text-align: left;
-    margin: 0% 5%;
+    margin: 0 10% 0 0;
+  }
+  #info-text p {
+    max-width: 435px;
   }
   #info-btn {
     flex-direction: row;
@@ -417,6 +450,7 @@ section {
     max-width: 100%;
     position: relative;
     padding: 0;
+    max-height: 650px;
   }
   .card-1{
     width: 190px;
@@ -472,4 +506,16 @@ section {
     width: 198px;
     height: 80px
   }
+  #links {
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .links-div{
+    justify-content: space-around;
+    margin: 0;
+    width: 50%;
+  }
+  
 }
