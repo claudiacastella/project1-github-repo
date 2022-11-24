@@ -154,15 +154,6 @@ h5 {
   background: #C8C8C8;
 }
 
-.nav-bar-burguer {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #C8C8C8;
-  overflow: visible;
-  min-width: 200px;
-}
 
 .list-burguer li {
   color: #6b708d;
@@ -555,7 +546,7 @@ fieldset {
   #menu-burguer {
     display: none;
   }
-  
+
   section {
     margin: 30px auto 100px;
     max-width:1100px;
