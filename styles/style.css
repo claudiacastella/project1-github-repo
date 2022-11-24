@@ -38,6 +38,9 @@ a {
   flex-direction: row;
 }
 
+.clear {
+  clear:both;
+}
 
 /* Typography */
 
@@ -57,6 +60,7 @@ h3 {
   font-size: 30px;
   font-weight: 700;
   line-height: 150%;
+  text-align: center;
 }
 
 h4 {
@@ -99,7 +103,7 @@ h5 {
 
 .head {
   justify-content: space-between;
-  margin: 5%;
+  margin: 7%;
 }
 
 .nav-bar-large {
@@ -144,7 +148,7 @@ h5 {
 /* Main starts here */
 
 section {
-  margin: 5%;
+  margin: 7%;
 }
 .hidden {
   display: none;
@@ -193,6 +197,23 @@ section {
   padding: 5%;
 }
 
+#articles {
+  flex-direction: column;
+}
+.article-text {
+  padding: 5%;
+}
+
+.artic {
+  background-color: white;
+  margin-bottom: 16px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
 #testimonials {
   background-color: #292E47;
   background-image: url(/project-assets/testimonial-section/orbit.png);
@@ -201,7 +222,6 @@ section {
   background-position: center;
   position: relative;
   margin: 5% auto;
-  min-height: 450px;
   padding: 5%;
 }
 
@@ -390,6 +410,57 @@ section {
   width: 33%;
   text-align: left;
 }
+/* CSS Project page starts here */
+
+#main-project h1 {
+  font-size: 40px;
+  margin: 20px 0 10px;
+}
+#main-project h2 {
+  font-size: 20px;
+  margin: 0px 0px 10px;
+  color: #6B708D;
+}
+.time {
+  margin-bottom: 20px;
+}
+.date-text {
+  font-size: 20px;
+  color: #292E47;
+  margin: 0px 5px 0px 0;
+}
+
+#main-project p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#img {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.main-img {
+  width: 100%;
+}
+
+.main-img-effect {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  width: 100%;
+  opacity: 0.4;
+  filter: saturate(200%) blur(40px);
+  transform: translate(0px, 0px);
+  transition: opacity 200ms ease;
+  object-fit: cover;
+}
+
+
+
 
 /* CSS Contact starts here */
 
@@ -428,6 +499,11 @@ fieldset {
   }
   p {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 40px;
+    text-align: left;
   }
   
   .head {
@@ -505,15 +581,28 @@ fieldset {
   #clients img {
     max-width: 20%;
   }
+
+  #articles {
+    flex-direction: row;
+    column-gap: 40px;
+  }
   
+  .article-text {
+    padding: 5%;
+  }
+  
+  #testimonials {
+    min-height: 450px;
+  }
   .emoji {
     display: block;
   }
+
   #serv-content {
     flex-direction: row;
+    column-gap: 40px;
   }
   .serv-card {
-    margin-right: 40px;
     padding: 5%;
   }
 
@@ -521,6 +610,9 @@ fieldset {
     text-align: center;
     justify-content: center;
     padding: 5%;
+  }
+  #contact h3 {
+    text-align: center;
   }
   #form {
     margin: 50px 0;
@@ -553,8 +645,18 @@ fieldset {
     margin: 0;
     width: 50%;
   }
+  /* Project page */
 
-  /* Contact */
+  .main-img, .main-img-effect {
+    height: 444px;
+    object-fit: cover;
+  }
+
+  .time {
+    float:right;
+  }
+
+  /* Contact page */
   fieldset {
     border: none;
     padding: 0;
@@ -580,11 +682,11 @@ fieldset {
   #contact-form textarea {
     height: 200px;
   }
-  #form-phone, #form-email {
+  #form-phone, #form-mailing {
     width: 45%;
     display: inline;
   }
-  #form-email {
+  #form-mailing {
     margin-right: 9%;
   }
 
