@@ -1,13 +1,8 @@
 // Adding burguer menu
-/*
-function myFunction() {
-    var x = document.getElementById("nav-bar");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  */
 
+const burguerIcon = document.querySelector("#burguer-icon");
+burguerIcon.addEventListener('click', () => {
+  const burguer = document.querySelector("#menu-burguer");
+  burguer.classList.toggle("hidden")
+} )
 

@@ -25,9 +25,18 @@
             </nav>
             <a href="contact.html" class="btn-blue btn nav-btn-large">Contact us</a>
             <!-- to add the javascript function for the burguer menu add this // href="javascript:void(0);" onclick="myFunction()" // to this link-->
-            <a class="icon">
+            <a id="burguer-icon" class="icon">
                 <i class="fa fa-bars"></i>
             </a>
+            <div id="menu-burguer" class="hidden">
+                <nav id="nav-bar"> <!--class="nav-bar-burguer"-->
+                    <ul class="list-burguer">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -174,6 +183,6 @@
         </div>
       </section>
     </footer>
-    <script src="index.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>

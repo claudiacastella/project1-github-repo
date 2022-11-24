@@ -104,6 +104,7 @@ h5 {
 .head {
   justify-content: space-between;
   margin: 7%;
+  position: relative;
 }
 
 .nav-bar-large {
@@ -143,7 +144,33 @@ h5 {
   color: #072AC8;
 }
 
+#menu-burguer {
+  position: absolute;
+  overflow: visible;
+  top: 150%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #C8C8C8;
+}
 
+.nav-bar-burguer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #C8C8C8;
+  overflow: visible;
+  min-width: 200px;
+}
+
+.list-burguer li {
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 10px 0px;
+}
 
 /* Main starts here */
 
