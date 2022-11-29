@@ -7,34 +7,30 @@ burguerIcon.addEventListener('click', () => {
 } )
 
 // API
-async function callApi() {
+async function callApi(param) {
   const res = await fetch('https://mockyard.herokuapp.com/products');
   const finalRes = await res.json(); 
   
   let i = Math.floor(Math.random() * (60 - 0 + 1) + 0);
-  document.querySelector(".article-title").innerText = finalRes[i].name;
-  document.querySelector(".article-summary").innerText = finalRes[i].description;
-  document.querySelector(".timestamp").innerText = finalRes[i].createdAt;
-  document.querySelector(".timestamp").setAttribute("dateTime", `${finalRes[i].createdAt}`);
+  param.querySelector(".article-title").innerText = finalRes[i].name;
+  param.querySelector(".article-summary").innerText = finalRes[i].description;
+  param.querySelector(".timestamp").innerText = finalRes[i].createdAt;
+  param.querySelector(".timestamp").setAttribute("dateTime", `${finalRes[i].createdAt}`);
 }
 
-async function callImg() {
+async function callImg(param) {
   const imgCall = await fetch('https://dog.ceo/api/breeds/image/random');
   const finalImg = await imgCall.json();
-
+  
   const image = finalImg.message;
-  document.querySelector(".article-img").setAttribute("src", `${image}`);
+  param.querySelector(".article-img").setAttribute("src", `${image}`);
 }
 
 const articles = document.querySelectorAll(".artic");
-
 articles.forEach (e => {
   callApi(e);
   callImg(e);}
 )
-
-// Averiguar cómo hacer que se repita en las 3 cards, y no que me printe solo la primera. 
-
 
 
 // FORM

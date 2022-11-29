@@ -552,6 +552,9 @@ fieldset {
   .top-menu li {
     padding: 0px 30px;
   }
+  .top-menu li a:active {
+    color:#072AC8
+  }
   .btn-blue {
     padding: 15px 36px;
   }
@@ -624,6 +627,9 @@ fieldset {
   #clients img {
     max-width: 20%;
   }
+  #clients img:hover {
+    filter:grayscale(1)
+  }
 
   .artic {
     width: 33%;
@@ -636,6 +642,15 @@ fieldset {
   
   .article-text {
     padding: 5%;
+  }
+
+  .project-img {
+    max-width: 340px;
+    max-height: 260px;
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 0 auto;
   }
   
   #testimonials {
