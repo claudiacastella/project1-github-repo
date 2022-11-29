@@ -516,6 +516,19 @@ fieldset {
   background-color: #292E47;
 }
 
+.form-fail{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffdede;
+}
+.form-done {
+  padding: 20px;
+  text-align: center;
+  background-color: #dddddd;
+}
+#contact-us .hidden{
+  display:none;
+}
 
 /* Responsive */
 
@@ -732,5 +745,8 @@ fieldset {
     margin: 10px 0 20px;
     height: 80px;
     font-size: 17px;
+  }
+  #contact-us .hidden{
+    display:none;
   }
 }

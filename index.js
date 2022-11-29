@@ -43,6 +43,12 @@ const submit = document.querySelector("#submit-btn");
 
 
 submit.addEventListener("click",() =>{
-
+  const input = document.querySelectorAll("input");
+  const valid = [];
+  input.forEach(elem => valid.push(elem.validity.valid));
+  console.log(valid);
+  if (valid.includes("false")){
+    document.querySelector(".form-fail").classList.remove("hidden")
+  } else document.querySelector(".form-done").classList.remove("hidden")
 
 })

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <header>
@@ -61,9 +61,15 @@
                     <textarea type="text" required="required" name="message" id="message" placeholder="Write your message here..."></textarea>
                 </fieldset>
                 <fieldset>
-                    <button id="submit-btn" type="submit" value="Submit" class="btn-blue btn submit">Submit</button>
+                    <button id="submit-btn" type="submit" value="Submit" data-wait="Please wait..." class="btn-blue btn submit">Submit</button>
                 </fieldset>
             </form>
+            <div class="form-fail hidden" tabindex="-1" role="region" aria-label="Email Form failure" >
+                <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+            <div class="form-done hidden" tabindex="-1" role="region" aria-label="Email Form success" >
+                <div>Thank you! Your submission has been received!</div>
+            </div>
         </section>
     </main>
     <footer>
