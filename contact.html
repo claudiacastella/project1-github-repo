@@ -44,22 +44,24 @@
             <form id="contact-form" action="" method="post">
                 <fieldset>
                     <label for="name">Full Name *</label>
-                    <input type="text" name="name" id="fullname" placeholder="Enter your full name">
+                    <input type="text" required="required" name="name" id="fullname" placeholder="Enter your full name">
                 </fieldset>
-                <fieldset id="form-mailing">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email-contact" placeholder="Enter your email address">
-                </fieldset>
-                <fieldset id="form-phone">
-                    <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                <div class="flex form">
+                    <fieldset id="form-mailing">
+                        <label for="email">Email *</label>
+                        <input type="email" required="required" name="email" id="email-contact" placeholder="Enter your email address">
+                    </fieldset>
+                    <fieldset id="form-phone">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                    </fieldset>
+                </div>
+                <fieldset>
+                    <label for="message">Message *</label>
+                    <textarea type="text" required="required" name="message" id="message" placeholder="Write your message here..."></textarea>
                 </fieldset>
                 <fieldset>
-                    <label for="message">Message</label>
-                    <textarea type="text" name="message" id="message" placeholder="Write your message here..."></textarea>
-                </fieldset>
-                <fieldset>
-                    <button type="submit" value="Submit" class="btn-blue btn submit">Submit</button>
+                    <button id="submit-btn" type="submit" value="Submit" class="btn-blue btn submit">Submit</button>
                 </fieldset>
             </form>
         </section>
