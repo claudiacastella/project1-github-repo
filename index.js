@@ -35,16 +35,27 @@ articles.forEach (e => {
 
 // FORM
 
-const submit = document.querySelector("#submit-btn");
+const submit = document.querySelector("form");
 
 
-submit.addEventListener("click",() =>{
-  const input = document.querySelectorAll("input");
-  const valid = [];
-  input.forEach(elem => valid.push(elem.validity.valid));
-  console.log(valid);
-  if (valid.includes("false")){
-    document.querySelector(".form-fail").classList.remove("hidden")
-  } else document.querySelector(".form-done").classList.remove("hidden")
+submit.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const input = document.querySelectorAll("input");
+    const valid = [];
+    input.forEach(elem => valid.push(elem.validity.valid));
+    console.log(valid);
+    if (valid.includes("false")) {
+      document.querySelector(".form-fail").classList.remove("hidden");
+    } else
+      document.querySelector(".form-done").classList.remove("hidden");
+  })
 
-})
+
+// Learn more
+// function learnMore (param) {
+//   const parent = 
+// document.querySelector("#main-title").innerText = param.querySelector(".article-title").innerText;
+// document.querySelector("#main-summary").innerText = param.querySelector(".article-summary").innerText;
+// document.querySelectorAll("#timestamp").innerText = param.querySelector(".timestamp").innerText;
+// document.querySelectorAll("#main-img.src") = param.querySelector(".article-img.src")
+// }
