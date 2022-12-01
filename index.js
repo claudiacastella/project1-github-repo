@@ -13,6 +13,7 @@ async function callApi(param) {
   
   let i = Math.floor(Math.random() * (60 - 0 + 1) + 0);
   param.querySelector(".article-title").innerText = finalRes[i].name;
+  param.querySelector(".article-subtitle").innerText = finalRes[i].category;
   param.querySelector(".article-summary").innerText = finalRes[i].description;
   param.querySelector(".timestamp").innerText = finalRes[i].createdAt;
   param.querySelector(".timestamp").setAttribute("dateTime", `${finalRes[i].createdAt}`);
@@ -31,6 +32,12 @@ articles.forEach (e => {
   callApi(e);
   callImg(e);}
 )
+
+if (!window.location.href.includes("?")) {
+  const main = document.querySelector("#main-project");
+  callApi(main);
+  callImg(main);
+}
 
 
 // FORM
