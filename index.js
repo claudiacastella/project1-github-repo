@@ -10,10 +10,13 @@ burguerIcon.addEventListener('click', () => {
 async function callApi(param) {
   const res = await fetch('https://mockyard.herokuapp.com/products');
   const finalRes = await res.json(); 
-  
+  console.log(finalRes);
+
   let i = Math.floor(Math.random() * (60 - 0 + 1) + 0);
   param.querySelector(".article-title").innerText = finalRes[i].name;
-  param.querySelector(".article-subtitle").innerText = finalRes[i].category;
+  if (param.querySelector(".article-subtitle")) {
+    param.querySelector(".article-subtitle").innerText = finalRes[i].category;
+  }
   param.querySelector(".article-summary").innerText = finalRes[i].description;
   param.querySelector(".timestamp").innerText = finalRes[i].createdAt;
   param.querySelector(".timestamp").setAttribute("dateTime", `${finalRes[i].createdAt}`);
@@ -25,6 +28,9 @@ async function callImg(param) {
   
   const image = finalImg.message;
   param.querySelector(".article-img").setAttribute("src", `${image}`);
+  if (param.querySelector(".article-img-blurry")) {
+    param.querySelector(".article-img-blurry").setAttribute("src", `${image}`);
+  }
 }
 
 const articles = document.querySelectorAll(".artic");
