@@ -10,8 +10,7 @@ burguerIcon.addEventListener('click', () => {
 async function callApi(param) {
   const res = await fetch('https://mockyard.herokuapp.com/products');
   const finalRes = await res.json(); 
-  console.log(finalRes);
-
+ 
   let i = Math.floor(Math.random() * (60 - 0 + 1) + 0);
   param.querySelector(".article-title").innerText = finalRes[i].name;
   if (param.querySelector(".article-subtitle")) {

@@ -709,9 +709,16 @@ fieldset {
   }
   /* Project page */
 
+  #img {
+    width: 100%;
+  }
+
   .main-img, .main-img-effect {
     height: 444px;
     object-fit: cover;
+    max-width: 100%; 
+    width: auto;
+    display: block;
   }
 
   .time {
